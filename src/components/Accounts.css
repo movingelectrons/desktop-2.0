@@ -1,0 +1,17 @@
+.accounts{
+	padding: 0;
+	margin: 0;
+}
+
+.header{
+	display: flex;
+}
+
+.header div{
+	padding: 0.75em;
+	font-weight: bold;
+}
+
+.actions{
+	margin-left: auto;
+}

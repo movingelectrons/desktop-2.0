@@ -1,0 +1,16 @@
+.container{
+	display: flex;
+}
+
+.container div{
+	padding: 0.75em;
+}
+
+.copy_icon, .action_icons{
+	font-size: 1.25em;
+	margin-top: -0.25em;
+}
+
+.action_icons{
+	margin-left: auto;
+}
