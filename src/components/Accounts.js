@@ -1,3 +1,8 @@
+import Web3 from 'web3';
+var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+console.log(web3);
+//var peerCount = web3.net.peerCount;
+//console.log(peerCount); // 4
 // @flow
 import React, { Component } from 'react';
 //import { Link } from 'react-router-dom';
@@ -11,7 +16,7 @@ class Accounts extends Component {
     
     return (
       <ul className="accounts">
-        <li className="header">
+        <li className="accounts_header">
           <div>Account</div>
           <div></div>
           <div>Balance</div>
