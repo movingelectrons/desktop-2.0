@@ -1,5 +1,7 @@
 
-const Wallet = require("../src/Wallet");
+//const Wallet = require("../src/Wallet");
+var Wallet = require('../src/Wallet.js');
+//let w = new Wallet();
 
 var assert = require('assert');
 

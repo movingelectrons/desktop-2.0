@@ -18,18 +18,11 @@ class Account extends React.Component {
   //props: Props;
 
   render() {
-    const {
-      id,
-      encrypted_private_key,
-      public_key,
-      salt,
-      balance
-    } = {};//this.props;
     return (
       <div className="container">
-        <div>{public_key}public key goes here</div>
+        <div>{this.props.public_key}public key goes here</div>
         <div className="copy_icon"><FontAwesomeIcon icon="copy" /></div>
-        <div>{balance}balance</div>
+        <div>{this.props.balance}balance</div>
         <div className="action_icons"><FontAwesomeIcon icon="ellipsis-h" /></div>
       </div>
       );
