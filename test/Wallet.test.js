@@ -17,7 +17,7 @@ describe('Wallet', function() {
 	describe('inital state', function(){
 		var wallet = new Wallet();
 		it('should have empty _accounts array', function(){
-			var t = wallet.accounts();
+			var t = wallet.getAccounts();
 			assert.deepStrictEqual(t, {});
 		});
 	});
