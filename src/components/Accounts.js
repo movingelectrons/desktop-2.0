@@ -1,13 +1,20 @@
 // @flow
 import React, { Component } from 'react';
-//import { Link } from 'react-router-dom';
-import './Accounts.css';
-//import routes from '../constants/routes';
+import '../assets/css/Accounts.css';
 import Account from './Account.js';
+import { observer } from 'mobx-react'
 
+@observer
 class Accounts extends Component {
 
   render() {
+    const { accounts } = this.props.store
+
+    const accountsList = accounts.map(account => (
+      <li key={account.id}>
+        <Account public_key={account.public_key} balance={account.balance} />
+      </li>
+    ))
     
     return (
       <ul className="accounts">
@@ -17,8 +24,7 @@ class Accounts extends Component {
           <div>Balance</div>
           <div className="actions">Actions</div>
         </li>
-        <li><Account public_key='12234565' balance='3243' /></li>
-        <li><Account public_key='12234565' balance='3243' /></li>
+        {accountsList}
       </ul>
     );
         

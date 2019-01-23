@@ -1,8 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-//import { Link } from 'react-router-dom';
-import './Account.css';
-//import routes from '../constants/routes';
+import '../assets/css/Account.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Account extends React.Component {
