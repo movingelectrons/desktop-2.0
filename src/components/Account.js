@@ -7,12 +7,12 @@ class Account extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <li key={this.props.key} id={this.props.key} className="container">
         <div>{this.props.public_key}</div>
         <div className="copy_icon"><FontAwesomeIcon icon="copy" /></div>
         <div>{this.props.balance}</div>
         <div className="action_icons"><FontAwesomeIcon icon="ellipsis-h" /></div>
-      </div>
+      </li>
       );
     }
   }

@@ -9,6 +9,10 @@
 	font-weight: bold;
 }
 
+.ab_spacer{
+	width: 16em;
+}
+
 .actions{
 	margin-left: auto;
 }

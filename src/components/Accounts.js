@@ -11,16 +11,19 @@ class Accounts extends Component {
     const { accounts } = this.props.store
 
     const accountsList = accounts.map(account => (
-      <li key={account.id}>
-        <Account public_key={account.public_key} balance={account.balance} />
-      </li>
+      <Account 
+        id={account.id} 
+        key={account.id} 
+        public_key={account.public_key} 
+        balance={account.balance} 
+        />
     ))
     
     return (
       <ul className="accounts">
         <li className="accounts_header">
-          <div>Account</div>
-          <div></div>
+          <div>Address</div>
+          <div className="ab_spacer"></div>
           <div>Balance</div>
           <div className="actions">Actions</div>
         </li>

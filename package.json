@@ -1,33 +1,27 @@
 {
-  "name": "electron-react-webpack-boilerplate",
-  "version": "1.3.0",
-  "description": "Minimal Electron, React, PostCSS and Webpack boilerplate to help you get started with building your next app.",
+  "name": "desktop-2.0",
+  "version": "0.0.1",
+  "description": "Musicoin desktop app v2.0",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate.git"
+    "url": "https://github.com/movingelectrons/desktop-2.0.git"
   },
   "homepage": "https://musicoin.com",
   "bugs": {
-    "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate.git/issues"
+    "url": "https://github.com/Musicoin/desktop.git/issues"
   },
   "author": {
-    "name": "Alex Devero",
-    "email": "deveroalex@gmail.com",
-    "url": "https://github.com/alexdevero"
+    "name": "Jerome Stonebridge",
+    "email": "jeromestonebridge@gmail.com",
+    "url": "https://github.com/movingelectrons"
   },
   "keywords": [
-    "app",
-    "boilerplate",
+    "desktop",
+    "musicoin",
     "electron",
-    "open",
-    "open-source",
-    "postcss",
-    "react",
-    "reactjs",
-    "source",
-    "webpack"
+    "open-source"
   ],
   "engines": {
     "node": ">=9.0.0",
@@ -48,6 +42,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.6.3",
     "@fortawesome/react-fontawesome": "^0.1.3",
     "bcrypt": "^3.0.3",
+    "bluebird": "^3.5.3",
     "electron": "^4.0.0",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
