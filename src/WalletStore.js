@@ -34,8 +34,11 @@ function startGMC(){
             });
             console.log("end strating gmc"+child.pid);
             process.on('exit', function(){
+                fs.unlink(path + 'gmc.pid', function(err){
+                    if(err) return console.log(err);
+                    console.log('pid file deleted successfully');
+                });  
                 child.exit();
-                fs.unlink(path + 'gmc.pid');
             });
         }catch(e){
             console.log("fatal: error starting gmc "+e);
