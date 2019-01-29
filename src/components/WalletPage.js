@@ -26,7 +26,7 @@ class WalletPage extends Component {
   refreshAccountsList = (props) => {
     try{
       let accounts = this.props.store.getWeb3().eth.accounts;
-      console.log(accounts);
+      //console.log(accounts);
       let i = 0;
       let tar = []; //temporary accounts array
       for(let account of accounts){
